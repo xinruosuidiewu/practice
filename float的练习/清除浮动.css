@@ -1,0 +1,41 @@
+.parent1{
+	border: 2px red solid;
+	width: 200px;
+}
+.child1{
+	width: 50px;
+	height: 50px;
+	background-color: pink;
+	margin: 10px;
+	float: left;
+}
+/*清除浮动方法1*/
+.cb{
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+.parent2{
+	margin-top: 30px;
+	border: 2px red solid;
+	width: 200px;
+}
+.child2{
+	width: 50px;
+	height: 50px;
+	background-color: pink;
+	margin: 10px;
+	float: left;
+}
+
+/*清除浮动方法2*/
+.clearfix:after{
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
